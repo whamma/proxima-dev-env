@@ -68,6 +68,29 @@ git submodule add 명령으로 기존 프로젝트의 서브모듈로 proxima-de
 
 > [my-project] $ git submodule add ssh://git@geminisoft.iptime.org/zodiac_v3/proxima-v3/proxima-dev-env.git .dev-env 
 
+### 3. 이미 프로젝트에 .dev-env가 서브모듈로 적용되어 있는 경우(.dev-env폴더는 있는데 폴더가 비여있는 경우)
+
+아래 명령으로 서브 모듈을 초기화 시킨다.
+
+> $ git submodule init
+
+초기화가 성공하면 아래와 같음 메세지가 출력된다ㅏ.
+
+```
+Submodule '.dev-env' (ssh://git@geminisoft.iptime.org/zodiac_v3/proxima-v3/proxima-dev-env.git) registered for path '.dev-env'
+```
+
+그런 다음 아래 명령어로 submodule을 업데이트 한다.
+
+> git submodule update
+
+명령이 성공하면 아래와 같은 메세지가 출력된다.
+
+```
+Cloning into 'D:/dev/proxima_v3/.dev-env'...
+Submodule path '.dev-env': checked out '79ad68b771ae7b0e5c03d48be31fa359c293a928'
+```
+
 ## Docker Compose를 이용한 서비스 컨테이너 관리
 
 1개 이상의 서비스 컨테이너를 다룰 때 Docker Compose를 활용한다.

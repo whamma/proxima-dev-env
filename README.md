@@ -75,7 +75,9 @@ git submodule add 명령으로 기존 프로젝트의 서브모듈로 proxima-de
 ### web-container 터미널 실행
 모든 개발환경은 컨테이너에 설정되어 있으므로 웹서비스에 대한 설정이나 의존성 패키지 설치는 web-container에 들어가서 해야 한다.
 아래 명령으로 web-container에 진입할 수 있다.
+
 > $ docker exec -it web-container bash
+
 이후 composer install과 같은 명령을 수행할 수 있다.
 ### web-container 터미널 종료
 > $ exit
@@ -85,7 +87,9 @@ git submodule add 명령으로 기존 프로젝트의 서브모듈로 proxima-de
 web-container에 extjs-3.4라이브러리가 탑제되어 있으므로 다음 명령어들을 실행한다.
 web-container에 접속한다.
 > $ docker exec -it web-container bash
+
 /extjs 디렉터리를 프로젝트 내 lib 디렉터리로 이동시킨다.
+
 > $ mv /extjs /var/www/html/lib
 ### 2. 설정파일 수정
 project/lib/config.SYSTEM.xml.example 파일을 project/lib/config.SYSTEM.xml로 복사하여 자신의 환경에 맞게 수정한다.(주로 CUSTOM_NAME 부분)

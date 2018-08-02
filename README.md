@@ -174,6 +174,10 @@ web-container에 접속한다.
 
 > $ mv /extjs /var/www/html/lib
 
+또는 아래의 링크에서 압축파일을 다운로드 받아 /var/www/html/lib/extjs에 압축을 푼다.
+
+http://geminisoft.iptime.org:10000/owncloud/public.php?service=files&t=97755021053a497cc1426804fe232026&download
+
 ### 2. 설정파일 수정
 
 project/lib/config.SYSTEM.xml.example 파일을 project/lib/config.SYSTEM.xml로 복사하여 자신의 환경에 맞게 수정한다.(주로 CUSTOM_NAME 부분)
